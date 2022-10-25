@@ -5,10 +5,11 @@
 + Spring Data Jpa
 + Creation of REST endpoint
 + Dependency injection
++ Entity Relationship mappings
 
 ```
 ```
-+ (Backend service)[https://github.com/krishdu/ExamRig-online-exam-portal-svc]
++ [Backend service](https://github.com/krishdu/ExamRig-online-exam-portal-svc)
 
 >    
 > User 

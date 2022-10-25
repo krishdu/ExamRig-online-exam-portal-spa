@@ -11,7 +11,7 @@ function Home() {
       <div id={style.backBody}></div>
       <div id={style.header}>
         <div id={style.headerHeadingBox}>
-          <h3>Online Exam System</h3>
+          <h3>ExamRig | Online Exam System</h3>
         </div>
       </div>
 
