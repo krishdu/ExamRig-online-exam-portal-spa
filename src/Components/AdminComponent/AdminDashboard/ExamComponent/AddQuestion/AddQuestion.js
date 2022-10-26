@@ -1,5 +1,5 @@
 import style from "../../SubjectComponent/Subject.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useHistory, useParams } from "react-router-dom";
 import axios from "axios";
 import baseUrl from "../../../../baseUrl";
@@ -117,7 +117,11 @@ function AddQuestion() {
           type="text"
           placeholder="Enter Subject"
         /> */}
-        <select onChange={(e) => handleInput(e)} name="sname" id="subjectField">
+        <select
+          onChange={(e) => onInputChange(e)}
+          name="sname"
+          id="subjectField"
+        >
           {subjects &&
             subjects.map((item) => {
               return (
