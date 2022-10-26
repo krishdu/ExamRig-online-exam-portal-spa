@@ -6,6 +6,7 @@
 + Creation of REST endpoint
 + Dependency injection
 + Entity Relationship mappings
++ Dockerized a Spring Boot Application
 
 ```
 ```
