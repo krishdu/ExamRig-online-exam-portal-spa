@@ -18,6 +18,16 @@ function AddQuestion() {
     sname: "",
   });
 
+  const [subjects, setSubjects] = useState([]);
+
+  useEffect(() => {
+    async function getAllSubjects() {
+      let value = await axios.get(`${baseUrl}/subject`);
+      setSubjects(value.data);
+    }
+    getAllSubjects();
+  }, []);
+
   function onInputChange(e) {
     setQuestion({
       ...question,
@@ -100,13 +110,23 @@ function AddQuestion() {
         />
 
         <label>Enter Subject</label>
-        <input
+        {/* <input
           onChange={(e) => onInputChange(e)}
           name="sname"
           id="subjectField"
           type="text"
           placeholder="Enter Subject"
-        />
+        /> */}
+        <select onChange={(e) => handleInput(e)} name="sname" id="subjectField">
+          {subjects &&
+            subjects.map((item) => {
+              return (
+                <option value={item.name} key={item.name}>
+                  {item.name}
+                </option>
+              );
+            })}
+        </select>
 
         <div id={style.buttonBox}>
           <button onClick={addnewQuestion}>Add</button>
