@@ -13,8 +13,9 @@
 | ------ |  
 
 <p align="center">
-<img alt="GIF" src="https://github.com/krishdu/ExamRig-online-exam-portal-spa/blob/master/exam-rig-online-exam-system?raw=true" width="800" height="400"/>
+<img alt="GIF" src="https://github.com/krishdu/ExamRig-online-exam-portal-spa/blob/master/exam-rig-online-exam-system.gif?raw=true" width="800" height="400"/>
 </p>
+
 ```
 ```
 + [Backend service](https://github.com/krishdu/ExamRig-online-exam-portal-svc)
